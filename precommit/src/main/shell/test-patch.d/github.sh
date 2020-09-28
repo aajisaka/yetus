@@ -762,8 +762,7 @@ function github_status_write()
     "${githubauth[@]}" \
     -d @"${filename}" \
     --location \
-    "${GITHUB_API_URL}/repos/${GITHUB_REPO}/statuses/${GITHUB_SHA}" \
-    > /dev/null
+    "${GITHUB_API_URL}/repos/${GITHUB_REPO}/statuses/${GITHUB_SHA}"
 }
 
 ## @description  Print out the finished details to the Github PR
